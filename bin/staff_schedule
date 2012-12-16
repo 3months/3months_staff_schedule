@@ -3,6 +3,7 @@
 require 'bundler/setup'
 Bundler.require
 
+require "google_drive"
 require "highline/import"
 require "active_support/all"
 
@@ -79,9 +80,7 @@ end
 @@config = {
   spreadsheet: "0AlNg4D7kwNRpcG5vSU0wNmY2TkRoU29UcEktZUkxV3c",
   skip_rows: 10,
-  google_client_id: "323748040919.apps.googleusercontent.com",
-  google_client_secret: "Sx4XX-51EHlxWc3cK-WOtv6q",
-  config_file: File.expand_path("~/.what_am_i_doing_this_week")
+  config_file: File.expand_path("~/.staff_schedule")
 }
 
 say("<%= color('What am I doing this week?!', :green) %>")
