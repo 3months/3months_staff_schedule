@@ -1,8 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'bundler/setup'
-Bundler.require
-
 require "google_drive"
 require "highline/import"
 require "active_support/all"
