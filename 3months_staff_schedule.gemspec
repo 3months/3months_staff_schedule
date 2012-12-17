@@ -20,4 +20,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency "google_drive"
   gem.add_dependency "highline"
   gem.add_dependency "activesupport"
+  gem.add_development_dependency "rake"
 end
