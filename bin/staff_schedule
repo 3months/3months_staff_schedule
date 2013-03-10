@@ -65,8 +65,7 @@ def project_header_for_row(row, index)
   # Does the row meet our requirements:
   # - one column present only
   # - only first column filled in
-  row_size = row.dup.delete_if(&:empty?).length
-  return row[0] if row_size == 1 and !row[0].blank?
+  return row[0] if !row[0].blank? && row[1].blank? 
 
   # Otherwise recurse
   return project_header_for_row(schedule.rows[index - 1], index - 1)
